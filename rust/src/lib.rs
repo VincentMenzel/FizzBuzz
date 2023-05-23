@@ -1,5 +1,5 @@
 pub fn fizzbuzz(n: i32, values: Vec<(i32, &str)>) -> String {
-    let res = (1..=n)
+    (1..=n)
         .map(|i| {
             let mut result = String::new();
             values.iter().for_each(|&val| {
@@ -13,9 +13,7 @@ pub fn fizzbuzz(n: i32, values: Vec<(i32, &str)>) -> String {
             };
         })
         .collect::<Vec<String>>()
-        .join("\n");
-
-    res
+        .join("\n")
 }
 
 #[cfg(test)]
