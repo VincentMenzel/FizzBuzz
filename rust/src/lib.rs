@@ -18,7 +18,7 @@ pub fn fizzbuzz(n: i32, values: Vec<(i32, &str)>) -> String {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::fizzbuzz;
 
     #[test]
     fn test_fizzbuzz() {
